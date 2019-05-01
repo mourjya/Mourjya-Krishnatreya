@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class dIAGONAL_elements 
+public class Diagonal_elements 
 {
 public static void main(String[] args) {
 	Scanner s = new Scanner(System.in);

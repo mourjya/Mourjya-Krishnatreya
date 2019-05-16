@@ -10,7 +10,7 @@ public class Clock_Angle {
 		}
 		
 		if(hour >= 12)
-			hour = 0+(hour-12);
+			hour = hour-12;
 		
 		if (minute == 60)
 			minute = 0;

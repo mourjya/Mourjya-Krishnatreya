@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class InString 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter string");
+		String str =s.next();
+		char [] n = str.toCharArray();  //to convert string to array
+		int x=n.length;
+		for(int i=0;i<x;i++)
+		{
+			int cnt=1;
+			for(int j=i+1;j<x;j++)
+			{
+				if(n[i]==n[j])
+				{
+					cnt++;
+					n[j]=n[x-1];
+					x--;
+					j--;
+				}
+			}
+			System.out.println("occurence of "+n[i]+" is "+cnt);
+		}
+	}
+}
